@@ -36,8 +36,8 @@ header {
   top: 0;
   background: rgba(255, 248, 235, 0.95);
   backdrop-filter: blur(0.6rem);
-  border-bottom: 0.1rem solid #d7c2ad;
   z-index: 1000;
+  box-shadow: 0rem 0.3rem 0.2rem rgba(62, 44, 35, 0.2);
 }
 
 .logo {
@@ -204,8 +204,18 @@ footer {
   }
 
   .container {
-    flex-direction: column;
+    display: grid;
     gap: 1.5rem;
+    justify-content: center;
+
+    & h1 {
+      justify-self: center;
+    }
+
+    & ul {
+      display: flex;
+      flex-flow: row;
+    }
   }
 
   nav ul {
