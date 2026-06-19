@@ -272,7 +272,7 @@ nav a:hover {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(32rem, 100%), 1fr));
   gap: 2rem;
 }
 
@@ -347,7 +347,7 @@ nav a:hover {
 /* ===== TECNOLOGIAS ===== */
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
   gap: 2.4rem;
 }
 
@@ -405,7 +405,7 @@ nav a:hover {
 
 .contato-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
   gap: 1.6rem;
 }
 
@@ -452,12 +452,15 @@ footer {
 }
 
 /* ===== RESPONSIVO ===== */
+
+/* Tablet */
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 10rem 2.4rem 4rem;
-    gap: 4rem;
+    padding: 8rem 2.4rem 4rem;
+    gap: 3.2rem;
+    min-height: auto;
   }
 
   .hero-sub {
@@ -473,6 +476,7 @@ footer {
     flex: unset;
     width: 100%;
     max-width: 48rem;
+    margin: 0 auto;
   }
 
   .sobre-grid {
@@ -483,25 +487,57 @@ footer {
   .sobre-cards {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
+/* Mobile */
 @media (max-width: 640px) {
   html { font-size: 56.25%; }
 
+  /* Header compacto — logo + nav na mesma linha */
   .header-inner {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: auto;
-    padding: 1.6rem 0;
-    gap: 1.2rem;
+    padding: 1.2rem 1.6rem;
+    gap: 0.8rem;
   }
 
   nav ul {
-    gap: 2rem;
+    gap: 1.4rem;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
-  .hero h1 { font-size: 3.6rem; }
+  nav a {
+    font-size: 1.3rem;
+  }
+
+  /* Hero com padding adequado para o header compacto */
+  .hero {
+    padding-top: 9rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  /* Code block não estoura */
+  .code-block {
+    font-size: 1.3rem;
+    padding: 2rem;
+    overflow-x: auto;
+    word-break: break-word;
+  }
+
+  /* Sections com menos padding lateral */
+  .section {
+    padding: 5.6rem 1.6rem;
+  }
 
   .sobre-cards {
     grid-template-columns: 1fr;
@@ -516,6 +552,11 @@ footer {
     gap: 0.8rem;
   }
 
+  /* Badge não estoura */
+  .project-badge {
+    white-space: normal;
+  }
+
   .tech-grid {
     grid-template-columns: 1fr;
   }
@@ -523,11 +564,22 @@ footer {
   .contato-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  /* Email longo não estoura */
+  .contato-value {
+    word-break: break-all;
+    font-size: 1.3rem;
+  }
 }
 
+/* Mobile pequeno */
 @media (max-width: 400px) {
   .contato-grid {
     grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    gap: 1rem;
   }
 }
 
