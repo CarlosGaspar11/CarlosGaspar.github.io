@@ -3,162 +3,281 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carlos Gaspar | Engenheiro de Software</title>
+    <title>Carlos Gaspar | Desenvolvedor Web</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <!-- ===== HEADER ===== -->
     <header>
-      <div class="container">
-        <h1 class="logo">Carlos Augusto Gaspar</h1>
+      <div class="container header-inner">
+        <span class="logo">Carlos Augusto Gaspar</span>
         <nav>
           <ul>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#projetos">Projetos</a></li>
             <li><a href="#tecnologias">Tecnologias</a></li>
-            <li><a href="#objetivo">Objetivo</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <!-- ===== HERO ===== -->
     <section class="hero">
       <div class="hero-content">
-        <h2>Engenheiro de Software em Formação</h2>
-        <p>
-          Desenvolvedor com experiência prática em projetos reais voltados para
-          educação e comércio.
+        <p class="hero-eyebrow">Engenharia de Software · UNDB · 5º período</p>
+        <h1>Desenvolvedor Web<br><span class="hero-accent">em formação</span></h1>
+        <p class="hero-sub">
+          Front-end, full-stack e aplicações em tempo real.<br>
+          Projetos reais, código no GitHub, buscando estágio.
         </p>
-        <a href="Currículo Carlos Augusto Gaspar.pdf" download class="btn"
-          >Baixar Currículo</a
-        >
+        <div class="hero-actions">
+          <a href="Curriculo Carlos Augusto Gaspar.pdf" download class="btn btn-primary">Baixar Currículo</a>
+          <a href="https://github.com/CarlosGaspar11" target="_blank" class="btn btn-outline">Ver GitHub</a>
+        </div>
+      </div>
+      <div class="hero-code" aria-hidden="true">
+        <div class="code-block">
+          <span class="c-keyword">const</span> <span class="c-var">dev</span> = {<br>
+          &nbsp;&nbsp;nome: <span class="c-str">"Carlos Gaspar"</span>,<br>
+          &nbsp;&nbsp;stack: [<span class="c-str">"Next.js"</span>, <span class="c-str">"React"</span>, <span class="c-str">"Node"</span>],<br>
+          &nbsp;&nbsp;buscando: <span class="c-str">"estágio"</span>,<br>
+          &nbsp;&nbsp;disponivel: <span class="c-keyword">true</span><br>
+          }
+        </div>
       </div>
     </section>
 
-    <section id="sobre" class="section">
-      <h2>Sobre Mim</h2>
-      <p>
-        Estudante do 5º período de Engenharia de Software (UNDB), com
-        experiência em desenvolvimento web front-end utilizando HTML, CSS,
-        JavaScript e React. Atuo em projetos reais aplicando boas práticas,
-        versionamento com Git e metodologias ágeis como Kanban e Scrum.
-      </p>
-    </section>
-
-    <section id="experiencia" class="section">
-      <h2>Experiência em Projetos</h2>
-
-      <div class="project-card">
-        <h3>🏫 Sistema Acadêmico – Escola Pública</h3>
-        <p>
-          Atuação no front-end em equipe de quatro integrantes, desenvolvendo
-          interface para visualização de notas, criação de simulados e cadastro
-          de questões, com foco em organização e usabilidade.
-        </p>
-      </div>
-
-      <div class="project-card">
-        <h3>🛒 Plataforma de Vendas Online – Loja Local</h3>
-        <p>
-          Desenvolvimento do front-end e apoio em funcionalidades de back-end em
-          equipe de duas pessoas, estruturando catálogo de produtos e sistema
-          inicial de pedidos.
-        </p>
-      </div>
-
-      <div class="project-card">
-        <h3>📋 Sistema Kanban Pessoal</h3>
-        <p>
-          Projeto individual desenvolvido do zero, aplicando conceitos de
-          estruturação, lógica de programação e organização de tarefas semanais.
-        </p>
-      </div>
-
-      <div class="project-card">
-        <h3>🔐 Protótipo de Start-up de Cibersegurança</h3>
-        <p>
-          Desenvolvimento em equipe de um protótipo funcional durante projeto
-          acadêmico de um ano, estruturando solução tecnológica e modelo de
-          negócio.
-        </p>
-      </div>
-
-      <div class="project-card">
-        <h3>✓ Outros Projetos</h3>
-        <p>
-          Desenvolvimento de pequenos projetos práticos, como calculadora,
-          sistema de paginação, modais (pop-up) e este próprio portfólio,
-          aplicando conceitos de HTML e CSS.
-        </p>
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Sobre mim</h2>
+        <div class="sobre-grid">
+          <div class="sobre-texto">
+            <p>
+              Estudante do 5º período de Engenharia de Software na UNDB, com experiência prática
+              em desenvolvimento web front-end e full-stack. Já trabalhei em projetos reais —
+              desde sistemas acadêmicos para escola pública até um chat em tempo real em produção.
+            </p>
+            <p>
+              Aplico boas práticas de código, versionamento com Git e metodologias ágeis (Kanban e Scrum).
+              Inglês intermediário. Busco oportunidade de estágio para contribuir tecnicamente e
+              evoluir na área.
+            </p>
+          </div>
+          <div class="sobre-cards">
+            <div class="info-card">
+              <span class="info-label">Formação</span>
+              <span class="info-value">Eng. de Software · UNDB</span>
+            </div>
+            <div class="info-card">
+              <span class="info-label">Técnico</span>
+              <span class="info-value">Automação Industrial · IFMA</span>
+            </div>
+            <div class="info-card">
+              <span class="info-label">Localização</span>
+              <span class="info-value">São Luís, Maranhão</span>
+            </div>
+            <div class="info-card">
+              <span class="info-label">Inglês</span>
+              <span class="info-value">Intermediário</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="tecnologias" class="section">
-      <h2>Tecnologias</h2>
-      <div class="skills-grid">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">React</div>
-        <div class="card">Node.js</div>
-        <div class="card">PostgreSQL</div>
-        <div class="card">Git</div>
-        <div class="card">GitHub</div>
-        <div class="card">API OpenAI</div>
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2 class="section-title">Projetos</h2>
+
+        <!-- Chat em Tempo Real — destaque -->
+        <div class="project-card project-card--featured">
+          <div class="project-header">
+            <div>
+              <h3>Chat em Tempo Real</h3>
+            </div>
+          </div>
+          <p>
+            Aplicação de mensagens desenvolvida em dupla com grupos, feed estilo X (Twitter)
+            e autenticação de usuários. Deploy ativo no Vercel.
+          </p>
+          <div class="tech-tags">
+            <span>Next.js</span><span>Supabase</span><span>Socket.io</span>
+            <span>Prisma</span><span>NextAuth</span><span>shadcn/ui</span>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Dashboard Meteorológico</h3>
+            </div>
+            <p>
+              Dashboard com dados climáticos em tempo real via APIs Open-Meteo e INMET.
+              Exibe temperatura, precipitação e previsão de forma visual.
+            </p>
+            <div class="tech-tags">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Open-Meteo</span><span>INMET</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Pesquisa de Filmes</h3>
+            </div>
+            <p>
+              Aplicação web para busca e exibição de informações de filmes
+              consumindo a API pública da IMDb. Interface responsiva.
+            </p>
+            <div class="tech-tags">
+              <span>Next.js</span><span>JavaScript</span><span>IMDb API</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Sistema Acadêmico</h3>
+              <span class="project-badge">Equipe · 4 pessoas</span>
+            </div>
+            <p>
+              Interface para visualização de notas, criação de simulados e cadastro
+              de questões para escola pública, com foco em usabilidade.
+            </p>
+            <div class="tech-tags">
+              <span>Next.js</span><span>Django</span><span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Visitação Virtual – Complexo Trapiche</h3>
+              <span class="project-badge">Acadêmico</span>
+            </div>
+            <p>
+              Ambiente 3D interativo do Complexo Trapiche na Unity. Ao se aproximar
+              de um item exposto, o sistema exibe automaticamente sua descrição.
+            </p>
+            <div class="tech-tags">
+              <span>Unity</span><span>C#</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Sistema Kanban Pessoal</h3>
+            </div>
+            <p>
+              Aplicação web de organização de tarefas baseada no método Kanban,
+              com manipulação dinâmica de interface.
+            </p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Start-up de Cibersegurança</h3>
+              <span class="project-badge">Acadêmico · 1 ano</span>
+            </div>
+            <p>
+              Protótipo funcional desenvolvido em equipe, estruturando modelo de
+              negócio e solução tecnológica ao longo de um ano.
+            </p>
+            <div class="tech-tags">
+              <span>Metodologia Ágil</span><span>Prototipagem</span>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Metodologias</h2>
-      <div class="skills-grid">
-        <div class="card">Kanban</div>
-        <div class="card">Scrum</div>
+    <!-- ===== TECNOLOGIAS ===== -->
+    <section id="tecnologias" class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Tecnologias</h2>
+        <div class="tech-grid">
+          <div class="tech-group">
+            <h4>Front-end</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind</li>
+              <li>shadcn/ui</li>
+            </ul>
+          </div>
+          <div class="tech-group">
+            <h4>Back-end & BD</h4>
+            <ul>
+              <li>Node.js</li>
+              <li>PostgreSQL</li>
+              <li>Prisma</li>
+              <li>Supabase</li>
+              <li>NextAuth</li>
+              <li>Socket.io</li>
+            </ul>
+          </div>
+          <div class="tech-group">
+            <h4>Infra & Ferramentas</h4>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Vercel</li>
+              <li>Unity (C# básico)</li>
+              <li>Python (básico)</li>
+              <li>Java (básico)</li>
+            </ul>
+          </div>
+          <div class="tech-group">
+            <h4>Metodologias</h4>
+            <ul>
+              <li>Kanban</li>
+              <li>Scrum</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="objetivo" class="section">
-      <h2>Objetivo Profissional</h2>
-      <p>
-        Busco oportunidade na área de tecnologia para contribuir tecnicamente no
-        desenvolvimento de soluções web e evoluir profissionalmente na área.
-      </p>
-    </section>
-
+    <!-- ===== CONTATO ===== -->
     <section id="contato" class="section">
-      <h2>Contato</h2>
-      <p>
-        WhatsApp:
-        <a
-          href="https://wa.me/5598987881104?text=Olá,%20Carlos!%0AVi%20seu%20portfólio%20e%20gostaria%20de%20conversar."
-          target="_blank"
-        >
-          Entrar em contato
-        </a>
-      </p>
-      <p>
-        GitHub:
-        <a href="https://github.com/CarlosGaspar11" target="_blank"
-          >github.com/CarlosGaspar11</a
-        >
-      </p>
-      <p>
-        Email:
-        <a
-          href="https://mail.google.com/mail/?view=cm&to=carlosgaspar012005@gmail.com&su=Contato%20pelo%20Portfolio"
-          target="_blank"
-          >carlosgaspar012005@gmail.com</a
-        >
-      </p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/carlosgaspar11" target="_blank"
-          >www.linkedin.com/in/carlosgaspar11</a
-        >
-      </p>
+      <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <p class="contato-sub">Disponível para estágio em desenvolvimento de software.</p>
+        <div class="contato-grid">
+          <a href="https://wa.me/5598987881104?text=Olá,%20Carlos!%0AVi%20seu%20portfólio%20e%20gostaria%20de%20conversar." target="_blank" class="contato-card">
+            <span class="contato-label">WhatsApp</span>
+            <span class="contato-value">(98) 98788-1104</span>
+          </a>
+          <a href="https://github.com/CarlosGaspar11" target="_blank" class="contato-card">
+            <span class="contato-label">GitHub</span>
+            <span class="contato-value">CarlosGaspar11</span>
+          </a>
+          <a href="https://www.linkedin.com/in/carlosgaspar11" target="_blank" class="contato-card">
+            <span class="contato-label">LinkedIn</span>
+            <span class="contato-value">carlosgaspar11</span>
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&to=carlosgaspar012005@gmail.com&su=Contato%20pelo%20Portfolio" target="_blank" class="contato-card">
+            <span class="contato-label">E-mail</span>
+            <span class="contato-value">carlosgaspar012005@gmail.com</span>
+          </a>
+        </div>
+      </div>
     </section>
 
     <footer>
-      <p></p>
+      <div class="container">
+        <p>© 2025 Carlos Augusto Gaspar · São Luís, MA</p>
+      </div>
     </footer>
+
   </body>
 </html>
