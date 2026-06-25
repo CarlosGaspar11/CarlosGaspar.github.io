@@ -82,6 +82,10 @@ nav a:hover {
   margin: 0 auto;
 }
 
+.hero-nome-mobile {
+  display: none;
+}
+
 .hero-content {
   flex: 1;
 }
@@ -136,6 +140,7 @@ nav a:hover {
   line-height: 2;
   color: #c9d1d9;
   border: 1px solid #21262d;
+  text-align: left;
 }
 
 .c-keyword { color: #ff7b72; }
@@ -460,7 +465,10 @@ footer {
     text-align: center;
     padding: 8rem 2.4rem 4rem;
     gap: 3.2rem;
-    min-height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    max-width: 100%;
+    justify-content: center;
   }
 
   .hero-sub {
@@ -524,6 +532,14 @@ footer {
 
   .hero h1 {
     font-size: 3.2rem;
+  }
+
+  .hero-nome-mobile {
+    display: block;
+    font-size: 2.4rem;
+    color: #c9d1d9;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
   }
 
   /* Code block não estoura */
